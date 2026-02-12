@@ -63,7 +63,7 @@ namespace Vehicle_Fleet_Manager
             Model = model;
             Year = year;
             Mileage = mileage;
-            LastServiceMileage = mileage; //Initial services at creation
+            LastServiceMileage = mileage; //Initial services at the current mileage
         }
 
         //Methods:
@@ -79,7 +79,7 @@ namespace Vehicle_Fleet_Manager
         public bool NeedsService() => (Mileage - LastServiceMileage) >= 10000; //Assuming service is required every 10000 miles
 
         //Void for Perform Service
-        public void PerfomService() => LastServiceMileage = Mileage; //Updates the last service mileage to the current mileage
+        public void PerfomService() => LastServiceMileage = Mileage; //Updates the last service mileage to the current mileage.
 
         //String for Get Summary
         public string GetSummary()

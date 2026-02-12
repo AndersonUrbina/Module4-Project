@@ -18,7 +18,7 @@ namespace Vehicle_Fleet_Manager
         //Public properties
         public string Make
         {
-            get => _make; //accessor method to get the value of _make
+            get => _make; //accessor method to get the value of the _make field
             set => _make = string.IsNullOrWhiteSpace(value)
                 ? throw new ArgumentException("Make cannot be empty.")
                 : value.Trim();

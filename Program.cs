@@ -49,7 +49,7 @@
                 }
             }
 
-            //Goodbye message
+            //Goodbye message when exiting the program
             Console.WriteLine("Existing Fleet Manager. Goodbye!");
         }
 

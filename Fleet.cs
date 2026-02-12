@@ -58,7 +58,7 @@ namespace Vehicle_Fleet_Manager
             }
         }
 
-        //Void to service all vehicles
+        //Void to service all vehicles that are due for service
         public void ServiceAllDue()
         {
             int serviced = 0;
